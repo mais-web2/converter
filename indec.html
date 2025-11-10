@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Distance Converter: KM ➡ MI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Distance Converter</h1>
+    <p>This tool helps you convert kilometers into miles instantly.</p>
+
+    <form id="converter-form">
+      <label for="kmInput">Kilometers:</label>
+      <input type="number" id="kmInput" name="kmInput" placeholder="Enter value..." required />
+
+      <div class="buttons">
+        <button type="button" onclick="clearFields()">Clear</button>
+        <button type="button" onclick="convertToMiles()">Convert</button>
+      </div>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
